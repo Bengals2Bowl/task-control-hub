@@ -1,0 +1,10 @@
+{
+  "id": "task-control-hub",
+  "name": "Task Control Hub",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Right-sidebar task hub showing all open tasks across the vault with status, priority, and dates.",
+  "author": "Neal",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,93 @@
+
+.task-control-hub-root {
+  padding: 6px;
+  font-size: 12px;
+}
+
+.task-control-hub-header {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.task-control-hub-header h4 {
+  margin: 0;
+  font-size: 13px;
+}
+
+.task-control-hub-count {
+  opacity: 0.7;
+  font-size: 11px;
+}
+
+.task-control-hub-controls {
+  margin-bottom: 6px;
+  font-size: 11px;
+}
+
+.task-control-hub-control-row select {
+  font-size: 11px;
+  margin-right: 4px;
+}
+
+.task-control-hub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.task-control-hub-empty {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.task-control-hub-item {
+  padding: 4px 2px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  cursor: pointer;
+}
+
+.task-control-hub-item:last-child {
+  border-bottom: none;
+}
+
+.task-control-hub-main-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.task-control-hub-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 70px;
+}
+
+.task-control-hub-badge {
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-size: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.task-control-hub-status {
+  background-color: var(--background-modifier-success);
+}
+
+.task-control-hub-priority {
+  background-color: var(--background-modifier-border-hover);
+}
+
+.task-control-hub-text {
+  font-size: 12px;
+  flex: 1;
+}
+
+.task-control-hub-meta-row {
+  font-size: 10px;
+  opacity: 0.8;
+  margin-top: 2px;
+}

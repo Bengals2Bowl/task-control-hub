@@ -1,0 +1,14 @@
+{
+  "name": "task-control-hub",
+  "version": "0.1.0",
+  "description": "Right-sidebar task hub for Obsidian",
+  "main": "main.js",
+  "scripts": {},
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "tasks"
+  ],
+  "author": "Neal",
+  "license": "MIT"
+}
