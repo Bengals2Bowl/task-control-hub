@@ -1,0 +1,216 @@
+.task-control-hub-root {
+  padding: 6px;
+  font-size: 12px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto; /* scroll when many tasks */
+}
+
+/* Header */
+
+.task-control-hub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.task-control-hub-title-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.task-control-hub-header h4 {
+  margin: 0;
+  font-size: 13px;
+}
+
+.task-control-hub-count {
+  opacity: 0.7;
+  font-size: 11px;
+}
+
+.task-control-hub-mode-wrap {
+  display: flex;
+  gap: 4px;
+}
+
+/* Controls */
+
+.task-control-hub-controls {
+  margin-bottom: 6px;
+  font-size: 11px;
+}
+
+.task-control-hub-control-row {
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.task-control-hub-control-row select {
+  font-size: 10px;
+  padding: 0 3px;
+  line-height: 1.1;
+  height: 18px;              /* shorter controls */
+}
+
+/* List container */
+
+.task-control-hub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.task-control-hub-empty {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+/* Sections (Today View) */
+
+.task-control-hub-section {
+  margin-bottom: 6px;
+}
+
+.task-control-hub-section-header {
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+
+/* Task items */
+
+.task-control-hub-item {
+  padding: 4px 2px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  cursor: pointer;
+}
+
+.task-control-hub-item:last-child {
+  border-bottom: none;
+}
+
+.task-control-hub-main-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.task-control-hub-badges {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  min-width: 0;
+}
+
+.task-control-hub-text-row {
+  margin-top: 2px;
+}
+
+.task-control-hub-text {
+  font-size: 12px;
+  font-weight: 600; /* bold task title */
+  display: block;
+}
+
+.task-control-hub-meta-row {
+  font-size: 10px;
+  opacity: 0.8;
+  margin-top: 2px;
+}
+
+/* Compact selects – smaller height for Status/Priority */
+
+.task-control-hub-select {
+  font-size: 10px;
+  padding: 0 3px;
+  line-height: 1.1;
+  height: 18px;              /* compact height */
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Status readable on colored backgrounds */
+.task-control-hub-status-select {
+  color: #000 !important;    /* black text */
+}
+
+/* Priority: white text (for dark themes) */
+.task-control-hub-priority-select {
+  color: #fff !important;    /* white text */
+}
+
+/* Due date inline editor */
+
+.task-control-hub-due-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.task-control-hub-due-display {
+  font-size: 10px;
+  padding: 0 4px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.task-control-hub-due-input {
+  display: none; /* shown only while editing */
+  font-size: 10px;
+  height: 18px;
+  padding: 0 3px;
+}
+
+/* Status color coding */
+
+.task-control-hub-status-select.status-open {
+  background-color: #fff3bf; /* yellow */
+}
+
+.task-control-hub-status-select.status-in-progress {
+  background-color: #cce5ff; /* blue-ish */
+}
+
+.task-control-hub-status-select.status-complete {
+  background-color: #d3f9d8; /* green */
+}
+
+.task-control-hub-status-select.status-canceled {
+  background-color: #ffc9c9; /* red */
+}
+
+/* Chips (quick filters + mode toggles) */
+
+.task-control-hub-chip {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--background-modifier-border);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.task-control-hub-chip.is-active {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+
+/* Make rendered task text compact */
+.task-control-hub-text-row p {
+  margin: 0;
+}
+
+.task-control-hub-text-row a {
+  text-decoration: underline;
+}
