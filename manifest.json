@@ -1,0 +1,10 @@
+{
+  "id": "task-control-hub",
+  "name": "Task Control Hub",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Right-sidebar task hub for tasks with status, priority, and due dates.",
+  "author": "Neal",
+  "authorUrl": "https://github.com/Bengals2Bowl",
+  "isDesktopOnly": false
+}
